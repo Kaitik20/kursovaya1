@@ -4,9 +4,12 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def multiply(a, b):
+    return a * b
+
 
 print("=== Простой калькулятор ===")
-print("Доступные операции: + (сложение), - (вычитание)")
+print("Доступные операции: + (сложение), - (вычитание), * (умножение)")
 
 while True:
     try:
@@ -18,6 +21,8 @@ while True:
             print("Результат:", add(x, y))
         elif op == "-":
             print("Результат:", subtract(x, y))
+        elif op == "*":
+            print("Результат:", multiply(x, y))
         else:
             print("Неизвестная операция")
 
