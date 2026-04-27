@@ -4,9 +4,14 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
+def divide(a, b):
+    if b == 0:
+        return "Ошибка: деление на ноль"
+    return a / b
 
-print("=== Простой калькулятор ===")
-print("Доступные операции: + (сложение), - (вычитание)")
+
+print("=== Простой калькулятор v2 ===")
+print("Доступные операции: + (сложение), - (вычитание), / (деление)")
 
 while True:
     try:
@@ -18,6 +23,8 @@ while True:
             print("Результат:", add(x, y))
         elif op == "-":
             print("Результат:", subtract(x, y))
+        elif op == "/":
+            print("Результат:", divide(x, y))
         else:
             print("Неизвестная операция")
 
