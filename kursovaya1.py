@@ -18,11 +18,11 @@ while True:
         y = float(input("Введите второе число: "))
 
         if op == "+":
-            print("Результат:", add(x, y))
+            print(f"{x} + {y} = {add(x, y)}")
         elif op == "-":
-            print("Результат:", subtract(x, y))
+            print(f"{x} - {y} = {subtract(x, y)}")
         elif op == "*":
-            print("Результат:", multiply(x, y))
+            print(f"{x} * {y} = {multiply(x, y)}")
         else:
             print("Неизвестная операция")
 
